@@ -6,7 +6,10 @@ import purge from '@erbelion/vite-plugin-laravel-purgecss'
 export default defineConfig({
     plugins: [
         laravel({
-            input: 'resources/js/app.js',
+            input: [
+                'resources/sass/bs_custom.scss',
+                'resources/js/app.js',
+            ],
             refresh: true,
         }),
         vue({
