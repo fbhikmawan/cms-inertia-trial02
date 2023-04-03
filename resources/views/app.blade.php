@@ -9,7 +9,6 @@
         <meta content="Coderthemes" name="author" />
 
         <!-- STYLES -->
-        @vite([ 'resources/sass/bs_custom.scss' ])
         <!-- Daterangepicker css -->
         <link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css') }}">
         <!-- Vector Map css -->
