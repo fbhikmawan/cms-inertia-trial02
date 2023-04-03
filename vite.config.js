@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
+import purge from '@erbelion/vite-plugin-laravel-purgecss'
 
 export default defineConfig({
     plugins: [
@@ -15,6 +16,9 @@ export default defineConfig({
                     includeAbsolute: false,
                 },
             },
+        }),
+        purge({
+            templates: ['vue']
         }),
     ],
     server: {
