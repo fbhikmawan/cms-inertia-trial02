@@ -9,6 +9,7 @@
         <meta content="Coderthemes" name="author" />
 
         <!-- STYLES -->
+        @vite([ 'resources/sass/bs_custom.scss' ])
         <!-- Daterangepicker css -->
         <link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css') }}">
         <!-- Vector Map css -->
@@ -23,13 +24,15 @@
         <script src="{{ asset('js/hyper-config.js') }}"></script>
         @routes
         @vite([
-            'resources/sass/bs_custom.scss',
             'resources/js/app.js',
             "resources/js/Pages/{$page['component']}.vue"])
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
         @inertia
+
+        <!-- Theme Settings -->
+        @include('layouts.theme.hyper-saas')
 
         <!-- JS -->
         <!-- Vendor js -->
