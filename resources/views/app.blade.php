@@ -28,8 +28,6 @@
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
-        @inertia
-
         <!-- Theme Settings -->
         @include('layouts.theme.hyper-saas')
 
@@ -50,5 +48,7 @@
         <script src="{{ asset('js/pages/demo.dashboard.js') }}"></script>
         <!-- Main Js -->
         <script src="{{ asset('js/main.js') }}"></script>
+
+        @inertia
     </body>
 </html>
